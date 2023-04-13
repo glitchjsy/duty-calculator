@@ -1,0 +1,44 @@
+.container {
+    padding: 5px;
+}
+
+label {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+input {
+    height: 20px;
+    margin-top: 5px;
+}
+
+.input-wrapper:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+#calculate-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+}
+
+#result-container {
+    display: none;
+    margin: 0;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 15px;
+    background-color: #85f2b1;
+    text-align: center;
+}
+
+#result-text {
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+#result-price {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
