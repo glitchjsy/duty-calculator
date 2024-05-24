@@ -1,0 +1,10 @@
+{
+    "name": "Duty Calculator",
+    "description": "Calculate excuse duty on cigarettes, tobacco and spirits",
+    "version": "1.0.1",
+    "author": "luke@glitch.je",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html"
+    }
+}

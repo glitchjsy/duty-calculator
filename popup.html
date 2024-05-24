@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <title>Excise Duty Calculator</title>
+
+    <style>
+        body {
+            width: 500px;
+            padding: 10px 20px;
+        }
+
+        .tabs {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            padding-bottom: 8px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .tab {
+            font-size: 20px;
+        }
+
+        .tab:hover {
+            color: green;
+            cursor: pointer;
+        }
+
+        .tab.active {
+            color: green;
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+        }
+
+        .tabcontent.active {
+            display: block;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+
+        .result {
+            display: none;
+            background-color: rgba(52, 235, 113, 0.2);
+            padding: 5px 15px;
+            font-size: 16px;
+            margin-top: 10px;
+            width: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Excise Duty Calculator</h1>
+
+    <div class="tabs">
+        <div id="spirits-tab" class="tab active">Spirits</div>
+        <div id="tobacco-tab" class="tab">Tobacco</div>
+        <div id="cigarettes-tab" class="tab">Cigarettes</div>
+    </div>
+
+    <section id="cigarettes" class="tabcontent">
+        <h2>Cigarettes</h2>
+        <div>
+            <label for="cigarettePacks">Enter number of packs:</label>
+            <input type="number" id="cigarettePacks">
+        </div>
+        <button id="calculate-cigarette-button">Calculate Duty</button>
+        <div id="cigaretteDutyResult" class="result"></div>
+    </section>
+
+    <section id="tobacco" class="tabcontent">
+        <h2>Hand Rolling Tobacco</h2>
+        <div>
+            <label for="tobaccoPouches">Enter number of pouches (50g each):</label>
+            <input type="number" id="tobaccoPouches">
+        </div>
+        <button id="calculate-tobacco-button">Calculate Duty</button>
+        <div id="tobaccoDutyResult" class="result"></div>
+    </section>
+
+    <section id="spirits" class="tabcontent active">
+        <h2>Spirits</h2>
+        <div>
+            <label for="spiritsQuantity">Enter quantity in ml:</label>
+            <input type="number" id="spiritsQuantity">
+        </div>
+        <div>
+            <label for="spiritsABV">Enter alcohol by volume (% ABV):</label>
+            <input type="number" id="spiritsABV">
+        </div>
+        <button id="calculate-spirits-button">Calculate Duty</button>
+        <div id="spiritsDutyResult" class="result"></div>
+    </section>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
