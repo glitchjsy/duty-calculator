@@ -1,5 +1,5 @@
 # Duty Calculator
-A Chrome extension to help calculate [Excise Duty](excise-duty) on cigarettes, tobacco and spirits.
+A Chrome extension to help calculate [Excise Duty][excise-duty] on cigarettes, tobacco and spirits.
 
 ## Installation
 This extension currently isn't available in the Chrome Web Store, and needs to be installed manually.
