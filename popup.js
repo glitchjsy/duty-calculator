@@ -35,7 +35,7 @@ document.getElementById("calculate-spirits-button").addEventListener("click", ca
  */
 function calculateCigaretteDuty() {
     const packs = document.getElementById('cigarettePacks').value;
-    const dutyPerPack = 83.58 / 10;
+    const dutyPerPack = 96.87 / 10;
     const totalDuty = packs * dutyPerPack;
 
     document.getElementById('cigaretteDutyResult').style.display = "block";
@@ -47,7 +47,7 @@ function calculateCigaretteDuty() {
  */
 function calculateTobaccoDuty() {
     const pouches = document.getElementById('tobaccoPouches').value;
-    const dutyPerPouch = 174.14 / 5;
+    const dutyPerPouch = 201.82 / 5;
     const totalDuty = pouches * dutyPerPouch;
 
     document.getElementById('tobaccoDutyResult').style.display = "block";
@@ -61,7 +61,7 @@ function calculateSpiritsDuty() {
     const quantity = document.getElementById('spiritsQuantity').value;
     const abv = document.getElementById('spiritsABV').value;
 
-    const dutyPerLitre = 17.40 / 1; // Duty for 40% ABV per litre
+    const dutyPerLitre = 18.80 / 1; // Duty for 40% ABV per litre
     const actualDuty = (dutyPerLitre * (quantity / 1000)) * (abv / 40);
 
     document.getElementById('spiritsDutyResult').style.display = "block";
