@@ -1,4 +1,5 @@
 # Duty Calculator
+[![Hits](https://hitcount.dev/p/glitchjsy/duty-calculator.svg)](https://hitcount.dev/p/glitchjsy/duty-calculator)  
 A Chrome extension to help calculate [Excise Duty][excise-duty] on cigarettes, tobacco and spirits.
 
 ## Installation
